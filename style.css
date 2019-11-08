@@ -52,7 +52,7 @@ img {
 	max-width: 100%;
 }
 
-input:focus,
+label:focus,
 select:focus,
 button:focus,
 textarea:focus {
@@ -891,6 +891,7 @@ ol {
 
 .projects-slider .single-project {
 	height: 550px;
+
 	width: 100%;
 	background: #333;
 	-o-transition: .8s;
@@ -1065,12 +1066,12 @@ ol {
 }
 
 .footer-item ul li {
-	display: block;
+	display: inline-flex;
 	margin-bottom: 10px;
 }
 
 .footer-item ul li a {
-	display: inline-block;
+	display: inline-flex;
 	font-size: 15px;
 	font-weight: 500;
 	color: #222222;
@@ -1624,6 +1625,10 @@ ol {
 	margin-right: 25px;
 }
 
+.footer-item2{
+margin-right: 25px;
+}
+
 .contact-form {
 	padding-top: 10px;
 }
@@ -1659,10 +1664,11 @@ ol {
 	font-style: italic;
 }
 
-.map-area {
-	height: 685px;
+  iframe .map-area {
+	height: 600px;
+	align-self: auto;
 	width: 100%;
-	display: block;
+	display: inline-block;
 	background: #f0f0f0;
 	margin-bottom: 2px;
 }
@@ -1883,7 +1889,7 @@ ol {
 		margin-right: -133px;
 	}
 	.footer-section .social-links a {
-		display: inline-block;
+		display: inline-flex;
 		padding: 0 15px;
 		margin-bottom: 0;
 	}
@@ -2094,3 +2100,17 @@ ol {
 		padding: 0 15px;
 	}
 }
+
+.mapouter {
+				position: absolute;
+				text-align: right;
+				height: 500px;
+				width: 1080px;
+			}
+
+			.gmap_canvas {
+				overflow: hidden;
+				background: none !important;
+				height: 500px;
+				width: 1080px;
+			}
